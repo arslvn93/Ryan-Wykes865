@@ -7,41 +7,41 @@
 // Define agent details separately to avoid initialization errors
 const agentDetails = {
   /** @type {string} Agent's full name (e.g., "Mike Henry"). Used widely. */
-  name: "Mike Henry", // Resolved: Kept remote change
+  name: "Ryan Wykes",
   /** @type {string} Agent's first name (e.g., "Mike"). Used in informal contexts. */
-  firstName: "Mike", // Resolved: Kept remote change
+  firstName: "Ryan",
   /** @type {string} Agent's professional title (e.g., "Brampton Realtor"). Used in copyright, potentially titles. */
-  title: "Brampton Realtor", // Resolved: Kept remote change
+  title: "Toronto Realtor",
   /** @type {string} Agent's professional designation (e.g., "Real Estate Sales Representative", "Broker", "Realtor"). */
-  designation: "Real Estate Sales Representative", // Resolved: Kept local addition
+  designation: "Broker",
   /** @type {string} Primary city/town served (e.g., "Brampton"). Used in descriptions, titles. */
-  location: "Brampton", // Resolved: Kept remote change
+  location: "Toronto",
   /** @type {string} Broader region served (if applicable, e.g., "Peel Region"). Used in FAQ. */
-  region: "Peel Region",
+  region: "Ontario",
   /** @type {number} Agent's years of experience. Used in About section, potentially counters. */
   experienceYears: 10,
   /** @type {string} Agent's primary contact phone number. Used in Footer, Contact forms/sidebars. */
-  phone: "647-881-4044", // Resolved: Kept remote change
+  phone: "647-627-6594",
   /** @type {string} Agent's primary contact email address. Used in Footer, Contact forms/sidebars. */
-  email: "mike.solditquick@gmail.com", // Resolved: Kept remote change
+  email: "wykes.rc@gmail.com",
   /** @type {string} Agent's primary office address. */
-  address: "276 DANFORTH AVENUE", // Resolved: Kept remote change
+  address: "130 King St. Suite 1300B",
   /** @type {string} Name of the brokerage the agent is affiliated with. */
-  brokerageName: "REAL Broker", // Resolved: Kept local addition
-  /** @type {string} File path for the standard agent headshot. Relative to /public. */
-  headshotImageSrc: "/images/agent/headshot.png", // Placeholder - Ensure image exists at this path
-  /** @type {string} File path for the agent headshot with no background. Relative to /public. */
-  headshotNoBgImageSrc: "/images/agent/headshot_no_bg.png", // Placeholder - Ensure image exists at this path
+  brokerageName: "Real Broker",
+  /** @type {string} URL for the standard agent headshot from AWS. */
+  headshotImageSrc: "/images/agent/openart-27c9336243704456b3da6400412e4651_raw.jpg",
+  /** @type {string} URL for the agent headshot with no background (constructed from AWS URL). */
+  headshotNoBgImageSrc: "/images/agent/headshot_bg.png",
   /**
    * @description List of social media profiles for the footer.
    * @type {Array<{name: string, url: string, iconClass: string}>}
    */
   socialLinks: [
     // Provide actual URLs for the agent's profiles
-    { name: "Facebook", url: "https://www.facebook.com/Mike.Henry.Realestate/", iconClass: "icon-fb" }, // Resolved: Kept remote change
+    { name: "Facebook", url: "#", iconClass: "icon-fb" },
     { name: "Twitter", url: "#", iconClass: "icon-X" },
     { name: "LinkedIn", url: "#", iconClass: "icon-linked" },
-    { name: "Instagram", url: "http://instagram.com/mike.henry.realestate", iconClass: "icon-ins" } // Resolved: Kept remote change
+    { name: "Instagram", url: "#", iconClass: "icon-ins" }
   ]
 };
 
@@ -358,7 +358,7 @@ export const siteContent = {
     /** @type {string} Introductory text for the "Process" section. */
     processDescription: "I'll get to know you to understand your selling goals, and explain the selling process so you know what to expect.",
     /** @type {string} Text used below each of the 3 process steps. */
-    processStepDescription: "Your responses will help connect you with the right resources. Shortly after your lender is selected, they’ll contact you to discuss options for financing your future home.",
+    processStepDescription: "Your responses will help connect you with the right resources. Shortly after your lender is selected, they'll contact you to discuss options for financing your future home.",
     /** @type {string} Heading for the "Loan Calculator" section. */
     calculatorTitle: "Calculate Mortgage Payments",
     /** @type {string} Text below the calculator heading. */
@@ -370,7 +370,7 @@ export const siteContent = {
    */
   notFound: {
     /** @type {string} The main message displayed. Can include HTML `<br />`. */
-    message: "I searched everywhere but couldn’t find what you’re looking for. Let’s find <br />a better place for you to go."
+    message: "I searched everywhere but couldn't find what you're looking for. Let's find <br />a better place for you to go."
   },
 
   /**
@@ -384,7 +384,7 @@ export const siteContent = {
     /** @type {string} Button text for the main CTA component. */
     ctaButtonText: "Contact Agent Today", // Placeholder - Constructed dynamically in Cta.jsx
     /** @type {string} Title for the Brands/Partners section (`Brands.jsx`). */
-    brandsTitle: "Let’s Work Together",
+    brandsTitle: "Let's Work Together",
     /** @type {string} Description for the Brands/Partners section. */
     brandsDescription: "Let's discuss how my expertise can help you achieve your real estate goals."
   }
